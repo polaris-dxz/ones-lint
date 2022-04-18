@@ -1,12 +1,12 @@
 module.exports = {
   extends: [
-    './src/rules/base/best-practices',
-    './src/rules/base/possible-errors',
-    './src/rules/base/style',
-    './src/rules/base/variables',
-    './src/rules/base/es6',
-    './src/rules/base/strict',
-    './src/rules/imports',
+    './rules/base/best-practices',
+    './rules/base/possible-errors',
+    './rules/base/style',
+    './rules/base/variables',
+    './rules/base/es6',
+    './rules/base/strict',
+    './rules/imports',
   ].map(require.resolve),
   parser: '@babel/eslint-parser',
   parserOptions: {

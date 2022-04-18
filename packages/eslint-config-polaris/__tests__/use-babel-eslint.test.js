@@ -4,7 +4,7 @@ const path = require('path');
 
 describe('test/use-babel-eslint.test.js', () => {
   it('babel-eslint parser run well for react', async () => {
-    const configPath = path.join(__dirname, '../src/react.js');
+    const configPath = './react.js';
     const filePath = path.join(__dirname, './fixtures/use-babel-eslint.jsx');
 
     const cli = new eslint.ESLint({
@@ -28,7 +28,7 @@ describe('test/use-babel-eslint.test.js', () => {
   });
 
   it('babel-eslint parser run well for vue', async () => {
-    const configPath = path.join(__dirname, '../src/vue.js');
+    const configPath = './vue.js';
     const filePath = path.join(__dirname, './fixtures/vue.vue');
 
     const cli = new eslint.ESLint({

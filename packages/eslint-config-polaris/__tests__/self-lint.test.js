@@ -12,7 +12,7 @@ describe('test/self-lint.test.js', () => {
       ignorePath: (path.join(__dirname, '../.eslintignore')),
     });
 
-    const reports = await cli.lintFiles([path.join(__dirname, '../src')]);
+    const reports = await cli.lintFiles([path.join(__dirname, '../.')]);
     assert.equal(
       reports.reduce((count, { errorCount }) => errorCount + count, 0),
       0,

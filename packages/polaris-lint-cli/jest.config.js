@@ -4,4 +4,5 @@ module.exports = {
   collectCoverage: true,
   verbose: false,
   coverageReporters: ['none'],
+  testRegex: '(/__tests__/.*\\.(test|spec)).[jt]sx?$',
 };

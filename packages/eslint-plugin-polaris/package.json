@@ -10,6 +10,9 @@
     "docs/",
     "src/"
   ],
+  "directories": {
+    "test": "__tests__"
+  },
   "publishConfig": {
     "registry": "http://npm.yzjop.com/"
   },

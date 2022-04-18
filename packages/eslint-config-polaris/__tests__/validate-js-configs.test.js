@@ -1,9 +1,9 @@
 /**
  * 验证 JS 规则，包括：
- * eslint-config-polaris
- * eslint-config-polaris/es5
- * eslint-config-polaris/react
- * eslint-config-polaris/vue
+ * eslint-config-ali
+ * eslint-config-ali/es5
+ * eslint-config-ali/react
+ * eslint-config-ali/vue
  */
 
 const assert = require('assert');
@@ -16,8 +16,8 @@ function isObject(obj) {
 }
 
 describe('Validate JS configs', () => {
-  it('Validate eslint-config-polaris', async () => {
-    const configPath = path.join(__dirname, '../index.js');
+  it('Validate eslint-config-ali', async () => {
+    const configPath = './index.js';
     const filePath = path.join(__dirname, './fixtures/index.js');
 
     const cli = new eslint.ESLint({
@@ -37,8 +37,9 @@ describe('Validate JS configs', () => {
     assert.notEqual(sumBy(results, 'warningCount'), 0);
   });
 
-  it('Validate eslint-config-polaris/es5', async () => {
-    const configPath = path.join(__dirname, '../src/es5.js');
+  it('Validate eslint-config-ali/es5', async () => {
+    const configPath = './es5.js';
+    console.log(configPath);
     const filePath = path.join(__dirname, './fixtures/es5.js');
 
     const cli = new eslint.ESLint({
@@ -65,8 +66,8 @@ describe('Validate JS configs', () => {
     assert.notEqual(errorReportedByReactPlugin.length, 0);
   });
 
-  it('Validate eslint-config-polaris/react', async () => {
-    const configPath = path.join(__dirname, '../src/react.js');
+  it('Validate eslint-config-ali/react', async () => {
+    const configPath = './react.js';
     const filePath = path.join(__dirname, './fixtures/react.jsx');
 
     const cli = new eslint.ESLint({
@@ -105,8 +106,8 @@ describe('Validate JS configs', () => {
     assert.equal(errorReportedByReactPlugin2.length, 2);
   });
 
-  it('Validate eslint-config-polaris/vue', async () => {
-    const configPath = path.join(__dirname, '../src/vue.js');
+  it('Validate eslint-config-ali/vue', async () => {
+    const configPath = './vue.js';
     const filePath = path.join(__dirname, './fixtures/vue.vue');
 
     const cli = new eslint.ESLint({
@@ -133,8 +134,8 @@ describe('Validate JS configs', () => {
     assert.notEqual(errorReportedByReactPlugin.length, 0);
   });
 
-  it('Validate eslint-config-polaris/essential', async () => {
-    const configPath = path.join(__dirname, '../src/essential/index.js');
+  it('Validate eslint-config-ali/essential', async () => {
+    const configPath = './essential/index.js';
     const filePath = path.join(__dirname, './fixtures/index.js');
 
     const cli = new eslint.ESLint({
@@ -169,8 +170,8 @@ describe('Validate JS configs', () => {
     assert.equal(commaSpacingErrors[0].severity, 1);
   });
 
-  it('Validate eslint-config-polaris/essential/es5', async () => {
-    const configPath = path.join(__dirname, '../src/essential/es5.js');
+  it('Validate eslint-config-ali/essential/es5', async () => {
+    const configPath = './essential/es5.js';
     const filePath = path.join(__dirname, './fixtures/es5.js');
 
     const cli = new eslint.ESLint({
@@ -202,8 +203,8 @@ describe('Validate JS configs', () => {
     assert.equal(errorReportedByReactPluginBlackList.length, 0);
   });
 
-  it('Validate eslint-config-polaris/essential/react', async () => {
-    const configPath = path.join(__dirname, '../src/essential/react.js');
+  it('Validate eslint-config-ali/essential/react', async () => {
+    const configPath = './essential/react.js';
     const filePath = path.join(__dirname, './fixtures/react.jsx');
 
     const cli = new eslint.ESLint({
@@ -235,8 +236,8 @@ describe('Validate JS configs', () => {
     assert.equal(errorReportedByReactPluginBlackList.length, 0);
   });
 
-  it('Validate eslint-config-polaris/essential/vue', async () => {
-    const configPath = path.join(__dirname, '../src/essential/vue.js');
+  it('Validate eslint-config-ali/essential/vue', async () => {
+    const configPath = './essential/vue.js';
     const filePath = path.join(__dirname, './fixtures/vue.vue');
 
     const cli = new eslint.ESLint({
@@ -269,8 +270,8 @@ describe('Validate JS configs', () => {
     assert.equal(errorReportedByReactPluginBlackList.length, 0);
   });
 
-  it('Validate eslint-config-polaris/node', async () => {
-    const configPath = path.join(__dirname, '../src/node.js');
+  it('Validate eslint-config-ali/node', async () => {
+    const configPath = './node.js';
     const filePath = path.join(__dirname, './fixtures/node.js');
 
     const cli = new eslint.ESLint({

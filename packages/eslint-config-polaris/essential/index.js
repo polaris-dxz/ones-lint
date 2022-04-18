@@ -4,7 +4,7 @@
 
 module.exports = {
   extends: [
-    '../../index',
+    '../index',
     './rules/set-style-to-warn',
     './rules/blacklist',
     './rules/es6-blacklist',

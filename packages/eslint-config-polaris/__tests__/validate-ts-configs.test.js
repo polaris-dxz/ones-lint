@@ -1,8 +1,8 @@
 /**
  * 验证 TS 规则，包括：
- * eslint-config-polaris/typescript
- * eslint-config-polaris/typescript/react
- * eslint-config-polaris/typescript/vue
+ * eslint-config-ali/typescript
+ * eslint-config-ali/typescript/react
+ * eslint-config-ali/typescript/vue
  */
 
 const assert = require('assert');
@@ -15,8 +15,8 @@ function isObject(obj) {
 }
 
 describe('Validate TS configs', () => {
-  it('Validate eslint-config-polaris/typescript', async () => {
-    const configPath = path.join(__dirname, '../src/typescript/index.js');
+  it('Validate eslint-config-ali/typescript', async () => {
+    const configPath = './typescript/index.js';
     const filePath = path.join(__dirname, './fixtures/ts.ts');
 
     const cli = new eslint.ESLint({
@@ -54,8 +54,8 @@ describe('Validate TS configs', () => {
     assert.ok(reports2.errorCount !== 0 || reports2.warnCount !== 0);
   });
 
-  it('Validate eslint-config-polaris/typescript/react', async () => {
-    const configPath = path.join(__dirname, '../src/typescript/react.js');
+  it('Validate eslint-config-ali/typescript/react', async () => {
+    const configPath = './typescript/react.js';
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
       useEslintrc: false,
@@ -102,8 +102,8 @@ describe('Validate TS configs', () => {
     assert.equal(errorReportedByReactPlugin2.length, 2);
   });
 
-  it('Validate eslint-config-polaris/typescript/vue', async () => {
-    const configPath = path.join(__dirname, '../src/typescript/vue.js');
+  it('Validate eslint-config-ali/typescript/vue', async () => {
+    const configPath = './typescript/vue.js';
     const filePath = path.join(__dirname, './fixtures/ts-vue.vue');
 
     const cli = new eslint.ESLint({
@@ -139,8 +139,8 @@ describe('Validate TS configs', () => {
     assert.notEqual(errorReportedByTSPlugin.length, 0);
   });
 
-  it('Validate eslint-config-polaris/essential/typescript', async () => {
-    const configPath = path.join(__dirname, '../src/essential/typescript/index.js');
+  it('Validate eslint-config-ali/essential/typescript', async () => {
+    const configPath = './essential/typescript/index.js';
     const filePath = path.join(__dirname, './fixtures/ts.ts');
 
     const cli = new eslint.ESLint({
@@ -180,8 +180,8 @@ describe('Validate TS configs', () => {
     assert.equal(styleErrors[0].severity, 1);
   });
 
-  it('Validate eslint-config-polaris/essential/typescript/react', async () => {
-    const configPath = path.join(__dirname, '../src/essential/typescript/react.js');
+  it('Validate eslint-config-ali/essential/typescript/react', async () => {
+    const configPath = './essential/typescript/react.js';
     const filePath = path.join(__dirname, './fixtures/ts-react.tsx');
 
     const cli = new eslint.ESLint({
@@ -229,8 +229,8 @@ describe('Validate TS configs', () => {
     assert.equal(errorReportedByReactPluginBlackList.length, 0);
   });
 
-  it('Validate eslint-config-polaris/essential/typescript/vue', async () => {
-    const configPath = path.join(__dirname, '../src/essential/typescript/vue.js');
+  it('Validate eslint-config-ali/essential/typescript/vue', async () => {
+    const configPath = './essential/typescript/vue.js';
     const filePath = path.join(__dirname, './fixtures/ts-vue.vue');
 
     const cli = new eslint.ESLint({
@@ -268,8 +268,8 @@ describe('Validate TS configs', () => {
     assert.equal(errorReportedByReactPluginBlackList.length, 0);
   });
 
-  it('Validate eslint-config-polaris/typescript/node', async () => {
-    const configPath = path.join(__dirname, '../src/typescript/node.js');
+  it('Validate eslint-config-ali/typescript/node', async () => {
+    const configPath = './typescript/node.js';
     const filePath = path.join(__dirname, './fixtures/ts-node.ts');
 
     const cli = new eslint.ESLint({
