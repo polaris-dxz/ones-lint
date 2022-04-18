@@ -1,11 +1,13 @@
 {
-  "name": "root",
-  "private": true,
+  "name": "polaris-lint",
+  "version": "0.0.3",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "ver": "lerna version --conventional-prerelease --no-changelog --no-commit-hooks --no-private"
+    "version": "lerna version --conventional-prerelease --no-changelog --no-commit-hooks --no-private"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
-  },
-  "version": "0.0.0"
+  }
 }
