@@ -27,8 +27,6 @@ const getConfigType = (cwd: string, pkg: PKG): string => {
     dsl = 'react';
   } else if (vueFiles.length > 0 || dependencies.some((name) => /^vue(-|$)/.test(name))) {
     dsl = 'vue';
-  } else if (dependencies.some((name) => /^rax(-|$)/.test(name))) {
-    dsl = 'rax';
   }
 
   return 'eslint-config-polaris/' + `${language}/${dsl}`.replace(/\/$/, '/index').replace(/^\//, '');
