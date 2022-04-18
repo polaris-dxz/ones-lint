@@ -1,9 +1,6 @@
 {
   "name": "polaris-lint",
   "version": "0.0.3",
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "version": "lerna version --conventional-prerelease --no-changelog --no-commit-hooks --no-private"
   },
