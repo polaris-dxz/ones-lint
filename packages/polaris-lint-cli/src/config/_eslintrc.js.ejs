@@ -1,0 +1,8 @@
+module.exports = {
+  extends: [
+    '<%= eslintType === 'index' ? 'eslint-config-polaris' : `eslint-config-polaris/${eslintType}` %>',
+    <%_ if (enablePrettier) { _%>
+    'prettier',
+    <%_ } _%>
+  ],
+};

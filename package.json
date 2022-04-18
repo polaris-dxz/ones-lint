@@ -1,0 +1,11 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "ver": "lerna version --conventional-prerelease --no-changelog --no-commit-hooks --no-private"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "version": "0.0.0"
+}
