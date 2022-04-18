@@ -1,6 +1,6 @@
 {
   "name": "polarislint",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "polarisdu <fupeng_du@yunzhijia.com>",
   "homepage": "",
@@ -64,8 +64,8 @@
     "cross-spawn": "^7.0.3",
     "ejs": "^3.1.5",
     "eslint": "^8.7.0",
-    "eslint-config-polaris": "^1.0.0",
     "eslint-config-egg": "^10.0.0",
+    "eslint-config-polaris": "^1.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.22.1",
