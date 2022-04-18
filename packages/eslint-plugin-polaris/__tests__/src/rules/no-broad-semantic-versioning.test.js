@@ -9,7 +9,7 @@ ruleTester.run('no-broad-semantic-versioning', rule, {
   valid: [
     {
       filename: 'package.json',
-      code: `module.exports = ${JSON.stringify({ devDependencies: { 'eslint-plugin-polaris': '^1.0.0' } })}`,
+      code: `module.exports = ${JSON.stringify({ devDependencies: { 'eslint-plugin-polaris': '^0.0.1' } })}`,
     },
     {
       filename: 'package.js',
