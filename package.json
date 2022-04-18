@@ -1,6 +1,6 @@
 {
-  "name": "polaris-lint",
-  "version": "0.0.3",
+  "name": "root",
+  "private": true,
   "scripts": {
     "version": "lerna version --conventional-prerelease --no-changelog --no-commit-hooks --no-private"
   },
