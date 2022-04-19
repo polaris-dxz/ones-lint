@@ -99,6 +99,25 @@ export const formatResults = (results: LintResult[], quiet: boolean): ScanResult
   });
 };
 
-import stylelint from 'stylelint';
+import * as stylelint from 'stylelint';
 
-export { stylelint };
+const {
+	lint,
+	rules,
+	formatters,
+	createPlugin,
+	resolveConfig,
+	createLinter,
+	utils
+} = { ...stylelint };
+
+export {
+	lint,
+	rules,
+	formatters,
+	createPlugin,
+	resolveConfig,
+	createLinter,
+	utils
+};
+

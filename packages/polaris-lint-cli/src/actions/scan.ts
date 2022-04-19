@@ -65,6 +65,7 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   if (config.enableStylelint !== false) {
     try {
       const files = getLintFiles(STYLELINT_FILE_EXT);
+      console.log('11111', stylelint);
       const data = await (stylelint as any).lint({
         ...stylelint.getLintConfig(options, pkg, config),
         files,
