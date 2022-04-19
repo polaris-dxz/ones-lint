@@ -8,11 +8,8 @@ import type { PKG } from '../types';
 
 // 精确移除依赖
 const packageNamesToRemove = [
-  '@ali/kyle',
-  '@ali/eslint-config-ot-browser',
   '@babel/eslint-parser',
   '@commitlint/cli',
-  '@iceworks/spec',
   'babel-eslint',
   'eslint',
   'husky',
@@ -24,7 +21,6 @@ const packageNamesToRemove = [
 
 // 按前缀移除依赖
 const packagePrefixesToRemove = [
-  '@ali/kyle-',
   '@commitlint/',
   '@typescript-eslint/',
   'eslint-',
@@ -45,8 +41,7 @@ const checkUselessConfig = (cwd: string): string[] => {
     .concat(
       glob.sync('.prettierrc?(.@(cjs|config.js|config.cjs|yaml|yml|json|json5|toml))', { cwd }),
     )
-    .concat(glob.sync('tslint.@(yaml|yml|json)', { cwd }))
-    .concat(glob.sync('.kylerc?(.@(yaml|yml|json))', { cwd }));
+    .concat(glob.sync('tslint.@(yaml|yml|json)', { cwd }));
 };
 
 /**
