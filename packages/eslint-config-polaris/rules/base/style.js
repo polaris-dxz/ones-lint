@@ -21,8 +21,8 @@ module.exports = {
     // 强制或禁止对注释的第一个字母大写
     'capitalized-comments': 'off',
 
-    // 用逗号分隔的多行结构，始终加上最后一个逗号（单行不用）
-    'comma-dangle': ['error', 'always-multiline'],
+    // 用逗号分隔的多行结构，无需尾随逗号
+    'comma-dangle': ['error', 'never'],
 
     // 逗号的前面无空格，后面有空格
     'comma-spacing': ['error', { before: false, after: true }],
@@ -349,7 +349,7 @@ module.exports = {
     // 强制操作符使用一致的换行符
     'operator-linebreak': 'off',
 
-    // 块的开始和结束不能是空行
+    // 块的开始和结束不能是空行
     'padded-blocks': ['warn', { blocks: 'never', classes: 'never', switches: 'never' }],
 
     // 要求或禁止在语句间填充空行

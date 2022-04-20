@@ -48,7 +48,7 @@ module.exports = {
     // 禁止对 catch 的入参重新赋值
     'no-ex-assign': 'error',
 
-    // 避免不必要的布尔类型转换
+    // 避免不必要的布尔类型转换
     'no-extra-boolean-cast': 'error',
 
     // 禁止不必要的小括号
@@ -120,7 +120,7 @@ module.exports = {
     // 使用有效的 JSDoc 注释
     'valid-jsdoc': 'off',
 
-    // 同 typeof 表达式结果进行比较的值必须是有效的字符串，即 'undefined', 'object', 'boolean', 'number', 'string', 'function' 或 'symbol'
+    // 同 typeof 表达式结果进行比较的值必须是有效的字符串，即 undefined, object, boolean, number, string, function 或 symbol
     'valid-typeof': ['error', { requireStringLiterals: true }],
   },
 };
