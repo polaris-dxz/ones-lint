@@ -367,9 +367,9 @@ module.exports = {
     // 使用 JSDoc 注释
     'require-jsdoc': 'off',
 
-    // 使用分号
+    // 不使用分号
     // @unessential
-    semi: ['error', 'always'],
+    semi: ['error', 'never'],
 
     // 分号的前面无空格，后面有空格
     'semi-spacing': ['error', { before: false, after: true }],

@@ -18,7 +18,7 @@ module.exports = {
     // 不要在条件表达式中使用赋值语句
     'no-cond-assign': ['error', 'always'],
 
-    // 生产环境禁止使用 console
+    // 生产环境禁止使用 console
     'no-console': 'warn',
 
     // 不要在条件表达式中使用常量
