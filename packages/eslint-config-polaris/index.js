@@ -6,7 +6,7 @@ module.exports = {
     './rules/base/variables',
     './rules/base/es6',
     './rules/base/strict',
-    './rules/imports',
+    './rules/imports'
   ].map(require.resolve),
   parser: '@babel/eslint-parser',
   parserOptions: {
@@ -16,8 +16,8 @@ module.exports = {
     ecmaFeatures: {
       globalReturn: false,
       impliedStrict: true,
-      jsx: true,
-    },
+      jsx: true
+    }
   },
-  root: true,
-};
+  root: true
+}

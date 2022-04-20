@@ -1,60 +1,60 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { Breadcrumb, Button, Search, Select, Dropdown, Menu, Notice } from 'antd';
-import Layout from 'layout';
-import { Translate } from 'antd-i18n';
-import * as actions from '../actions/index';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import { Breadcrumb, Button, Search, Select, Dropdown, Menu, Notice } from 'antd'
+import Layout from 'layout'
+import { Translate } from 'antd-i18n'
+import * as actions from '../actions/index'
 
-const { Nav, Card, Section, Toolbar } = Layout;
+const { Nav, Card, Section, Toolbar } = Layout
 
-const ButtonGroup = Button.Group;
-const { Option } = Select;
+const ButtonGroup = Button.Group
+const { Option } = Select
 
 class Root extends Component {
   componentDidMount() {
-    this.props.getBreadcrumb();
+    this.props.getBreadcrumb()
   }
 
   onSearch(searchParams) {
-    console.log(searchParams);
+    console.log(searchParams)
   }
 
   onSelectChange(value, data) {
-    console.log(value, data);
+    console.log(value, data)
   }
 
   onMenuClick(selectedKeys, menuItem, meta) {
-    console.log(selectedKeys, menuItem, meta);
+    console.log(selectedKeys, menuItem, meta)
   }
 
   render() {
-    const { breadcrumb } = this.props;
+    const { breadcrumb } = this.props
     const subNavData = {
       navs: [
         {
           key: 'home',
           text: '导航操作区',
           active: true,
-          link: '#',
+          link: '#'
         },
         {
           key: 'permit',
           text: '权限',
-          link: '#',
+          link: '#'
         },
         {
           key: 'favorite',
           text: '常用链接',
-          link: '#',
-        },
-      ],
-    };
+          link: '#'
+        }
+      ]
+    }
 
     return (
       <Layout>
         <Nav data={subNavData} />
-         <Section>
+        <Section>
           <Breadcrumb dataSource={breadcrumb} />
         </Section>
         <Section>
@@ -106,11 +106,7 @@ class Root extends Component {
         <Section>
           <Card title="详细内容展示区（Card组件）" extra={<a href="#">更多操作</a>}>
             <p>
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
+              <a href="#" target="_blank" rel="noreferrer noopener">
                 点击查看设计规范
               </a>
             </p>
@@ -122,11 +118,11 @@ class Root extends Component {
           </Card>
         </Section>
       </Layout>
-    );
+    )
   }
 }
 
 export default connect(
   ({ index, ...others }) => ({ ...index, ...others }),
-  dispatch => bindActionCreators(actions, dispatch)
-)(Root);
+  (dispatch) => bindActionCreators(actions, dispatch)
+)(Root)

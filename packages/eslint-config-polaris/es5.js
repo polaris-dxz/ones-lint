@@ -4,7 +4,7 @@ module.exports = {
     './rules/base/possible-errors',
     './rules/base/style',
     './rules/base/variables',
-    './rules/es5',
+    './rules/es5'
   ].map(require.resolve),
-  root: true,
-};
+  root: true
+}

@@ -8,7 +8,7 @@ module.exports = {
     jest: true,
     jquery: true,
     mocha: true,
-    node: true,
+    node: true
   },
   rules: {
     // 强制或禁止在变量声明时进行赋值
@@ -43,6 +43,6 @@ module.exports = {
     'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
 
     // 不要在声明前就使用变量
-    'no-use-before-define': ['error', { functions: false, classes: false, variables: false }],
-  },
-};
+    'no-use-before-define': ['error', { functions: false, classes: false, variables: false }]
+  }
+}

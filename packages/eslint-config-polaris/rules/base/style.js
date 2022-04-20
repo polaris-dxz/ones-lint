@@ -47,8 +47,8 @@ module.exports = {
       'off',
       'always',
       {
-        includeCommonJSModuleExports: false,
-      },
+        includeCommonJSModuleExports: false
+      }
     ],
 
     // 要求或禁止命名的函数表达式
@@ -85,14 +85,14 @@ module.exports = {
         // MemberExpression: null,
         FunctionDeclaration: {
           parameters: 1,
-          body: 1,
+          body: 1
         },
         FunctionExpression: {
           parameters: 1,
-          body: 1,
+          body: 1
         },
         CallExpression: {
-          arguments: 1,
+          arguments: 1
         },
         ArrayExpression: 1,
         ObjectExpression: 1,
@@ -112,10 +112,10 @@ module.exports = {
           'JSXClosingElement',
           'JSXText',
           'JSXEmptyExpression',
-          'JSXSpreadChild',
+          'JSXSpreadChild'
         ],
-        ignoreComments: false,
-      },
+        ignoreComments: false
+      }
     ],
 
     // JSX 属性使用双引号，不要使用单引号
@@ -134,9 +134,9 @@ module.exports = {
         overrides: {
           return: { after: true },
           throw: { after: true },
-          case: { after: true },
-        },
-      },
+          case: { after: true }
+        }
+      }
     ],
 
     // 单行注释应单独一行写在被注释对象的上方，不要追加在某条语句的后面
@@ -145,8 +145,8 @@ module.exports = {
       {
         position: 'above',
         ignorePattern: '',
-        applyDefaultPatterns: true,
-      },
+        applyDefaultPatterns: true
+      }
     ],
 
     // 指定 unix 或 windows 风格的换行符
@@ -172,8 +172,8 @@ module.exports = {
         ignoreComments: false,
         ignoreRegExpLiterals: true,
         ignoreStrings: true,
-        ignoreTemplateLiterals: true,
-      },
+        ignoreTemplateLiterals: true
+      }
     ],
 
     // 文件最大行数：1000
@@ -183,8 +183,8 @@ module.exports = {
       {
         max: 1000,
         skipBlankLines: true,
-        skipComments: true,
-      },
+        skipComments: true
+      }
     ],
 
     // 函数最大行数：80
@@ -195,8 +195,8 @@ module.exports = {
         max: 80,
         skipBlankLines: true,
         skipComments: true,
-        IIFEs: true,
-      },
+        IIFEs: true
+      }
     ],
 
     // 回调函数最大嵌套深度
@@ -224,8 +224,8 @@ module.exports = {
         newIsCap: true,
         newIsCapExceptions: [],
         capIsNew: false,
-        capIsNewExceptions: ['Immutable.Map', 'Immutable.Set', 'Immutable.List'],
-      },
+        capIsNewExceptions: ['Immutable.Map', 'Immutable.Set', 'Immutable.List']
+      }
     ],
 
     // 禁止在调用构造函数时省略小括号
@@ -266,10 +266,10 @@ module.exports = {
           ['&', '|', '^', '~', '<<', '>>', '>>>'],
           ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
           ['&&', '||'],
-          ['in', 'instanceof'],
+          ['in', 'instanceof']
         ],
-        allowSamePrecedence: false,
-      },
+        allowSamePrecedence: false
+      }
     ],
 
     // 不要混用空格和 tab
@@ -307,8 +307,8 @@ module.exports = {
       'error',
       {
         skipBlankLines: false,
-        ignoreComments: false,
-      },
+        ignoreComments: false
+      }
     ],
 
     // 命名不要以下划线开头或结尾
@@ -333,8 +333,8 @@ module.exports = {
     'object-property-newline': [
       'error',
       {
-        allowAllPropertiesOnSameLine: true,
-      },
+        allowAllPropertiesOnSameLine: true
+      }
     ],
 
     // 一条声明语句声明一个变量
@@ -393,8 +393,8 @@ module.exports = {
       {
         anonymous: 'always',
         named: 'never',
-        asyncArrow: 'always',
-      },
+        asyncArrow: 'always'
+      }
     ],
 
     // 小括号内部两侧无空格
@@ -409,8 +409,8 @@ module.exports = {
       {
         words: true,
         nonwords: false,
-        overrides: {},
-      },
+        overrides: {}
+      }
     ],
 
     // 注释内容和注释符之间需留有一个空格
@@ -420,14 +420,14 @@ module.exports = {
       {
         line: {
           exceptions: ['-', '+'],
-          markers: ['=', '!', '/'],
+          markers: ['=', '!', '/']
         },
         block: {
           exceptions: ['-', '+'],
           markers: ['=', '!'],
-          balanced: true,
-        },
-      },
+          balanced: true
+        }
+      }
     ],
 
     // switch 的 case 和 default 子句冒号前面无空格，后面有空格
@@ -440,6 +440,6 @@ module.exports = {
     'unicode-bom': ['off', 'never'],
 
     // 要求正则表达式被括号括起来
-    'wrap-regex': 'off',
-  },
-};
+    'wrap-regex': 'off'
+  }
+}

@@ -1,5 +1,5 @@
 <template>
-  <div style="margin: 20px;">
+  <div style="margin: 20px">
     <textarea>{{ value }}</textarea>
   </div>
 </template>

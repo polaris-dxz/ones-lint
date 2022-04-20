@@ -3,7 +3,7 @@ module.exports = {
     '../react',
     './rules/set-style-to-warn',
     './rules/blacklist',
-    './rules/es6-blacklist',
+    './rules/es6-blacklist'
   ].map(require.resolve),
   rules: {
     // 标签的属性有多行时，结束标签需另起一行
@@ -42,8 +42,8 @@ module.exports = {
         declaration: true,
         assignment: true,
         return: true,
-        arrow: true,
-      },
+        arrow: true
+      }
     ],
 
     // 设置第一个属性的位置。multiline-multiprop：如果JSX标签占用多行并且有多个属性，则第一个属性应始终放在新行上
@@ -69,8 +69,8 @@ module.exports = {
       {
         closingSlash: 'never',
         beforeSelfClosing: 'always',
-        afterOpening: 'never',
-      },
-    ],
-  },
-};
+        afterOpening: 'never'
+      }
+    ]
+  }
+}

@@ -18,8 +18,8 @@ module.exports = {
       'warn',
       {
         allowNamedFunctions: false,
-        allowUnboundThis: true,
-      },
+        allowUnboundThis: true
+      }
     ],
 
     // 优先使用 const，只有当变量会被重新赋值时才使用 let
@@ -28,8 +28,8 @@ module.exports = {
       'warn',
       {
         destructuring: 'any',
-        ignoreReadBeforeAssign: true,
-      },
+        ignoreReadBeforeAssign: true
+      }
     ],
 
     // 模板字符串中的大括号内部两侧无空格
@@ -51,12 +51,12 @@ module.exports = {
       'always',
       {
         ignoreConstructors: false,
-        avoidQuotes: true,
-      },
+        avoidQuotes: true
+      }
     ],
 
     // 使用 const 或 let 声明变量，不要使用 var
     // @unessential
-    'no-var': 'warn',
-  },
-};
+    'no-var': 'warn'
+  }
+}

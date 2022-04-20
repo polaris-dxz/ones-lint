@@ -6,8 +6,8 @@ module.exports = {
       'off',
       'as-needed',
       {
-        requireReturnForObjectLiteral: false,
-      },
+        requireReturnForObjectLiteral: false
+      }
     ],
 
     // 箭头函数-函数参数始终加上小括号
@@ -50,8 +50,8 @@ module.exports = {
       'off',
       {
         paths: [],
-        patterns: [],
-      },
+        patterns: []
+      }
     ],
 
     // 在 constructor 中，禁止在调用 super() 前使用 this 或 super 关键字
@@ -69,8 +69,8 @@ module.exports = {
       {
         ignoreDestructuring: false,
         ignoreImport: false,
-        ignoreExport: false,
-      },
+        ignoreExport: false
+      }
     ],
 
     // 使用 const 或 let 声明变量，不要使用 var
@@ -84,8 +84,8 @@ module.exports = {
       'always',
       {
         ignoreConstructors: false,
-        avoidQuotes: true,
-      },
+        avoidQuotes: true
+      }
     ],
 
     // 回调函数使用箭头函数而不是匿名函数
@@ -94,8 +94,8 @@ module.exports = {
       'error',
       {
         allowNamedFunctions: false,
-        allowUnboundThis: true,
-      },
+        allowUnboundThis: true
+      }
     ],
 
     // 优先使用 const，只有当变量会被重新赋值时才使用 let
@@ -104,8 +104,8 @@ module.exports = {
       'error',
       {
         destructuring: 'any',
-        ignoreReadBeforeAssign: true,
-      },
+        ignoreReadBeforeAssign: true
+      }
     ],
 
     // 使用对象和数组的解构
@@ -114,16 +114,16 @@ module.exports = {
       {
         VariableDeclarator: {
           array: false,
-          object: true,
+          object: true
         },
         AssignmentExpression: {
           array: false,
-          object: false,
-        },
+          object: false
+        }
       },
       {
-        enforceForRenamedProperties: false,
-      },
+        enforceForRenamedProperties: false
+      }
     ],
 
     // 禁止使用 parseInt() 进行二、八、十六禁止转换
@@ -150,8 +150,8 @@ module.exports = {
       {
         ignoreCase: false,
         ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-      },
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single']
+      }
     ],
 
     // 创建 Symbol 时必须传入参数
@@ -163,6 +163,6 @@ module.exports = {
 
     // yield* 表达式的 * 号前面无空格，后面有一个空格
     // @unessential
-    'yield-star-spacing': ['error', 'after'],
-  },
-};
+    'yield-star-spacing': ['error', 'after']
+  }
+}

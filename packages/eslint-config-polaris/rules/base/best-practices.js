@@ -13,8 +13,8 @@ module.exports = {
     'class-methods-use-this': [
       'off',
       {
-        exceptMethods: [],
-      },
+        exceptMethods: []
+      }
     ],
 
     // 设置圈复杂度最大值
@@ -66,8 +66,8 @@ module.exports = {
     'no-empty-function': [
       'error',
       {
-        allow: ['arrowFunctions', 'functions', 'methods'],
-      },
+        allow: ['arrowFunctions', 'functions', 'methods']
+      }
     ],
 
     // 不要在解构中出现空模式，即 {} 或 []
@@ -105,8 +105,8 @@ module.exports = {
         boolean: false,
         number: true,
         string: true,
-        allow: [],
-      },
+        allow: []
+      }
     ],
 
     // 禁止在全局范围使用变量和函数声明
@@ -139,8 +139,8 @@ module.exports = {
         ignore: [],
         ignoreArrayIndexes: true,
         enforceConst: true,
-        detectObjects: false,
-      },
+        detectObjects: false
+      }
     ],
 
     // 禁止出现多个连续空格
@@ -148,8 +148,8 @@ module.exports = {
     'no-multi-spaces': [
       'error',
       {
-        ignoreEOLComments: false,
-      },
+        ignoreEOLComments: false
+      }
     ],
 
     // 禁止使用多行字符串
@@ -184,9 +184,9 @@ module.exports = {
           'request', // for Express requests
           'res', // for Express responses
           'response', // for Express responses
-          '$scope', // for Angular 1 scopes
-        ],
-      },
+          '$scope' // for Angular 1 scopes
+        ]
+      }
     ],
 
     // 禁止使用 __proto__ 属性
@@ -229,8 +229,8 @@ module.exports = {
       {
         allowShortCircuit: true,
         allowTernary: true,
-        allowTaggedTemplates: true,
-      },
+        allowTaggedTemplates: true
+      }
     ],
 
     // 禁止未使用的标签
@@ -279,6 +279,6 @@ module.exports = {
     'wrap-iife': ['error', 'any', { functionPrototypeMethods: false }],
 
     // 使用 color === 'red' 而不是 'red' === color
-    yoda: 'warn',
-  },
-};
+    yoda: 'warn'
+  }
+}

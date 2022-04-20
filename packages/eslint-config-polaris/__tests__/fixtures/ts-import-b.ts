@@ -1,3 +1,3 @@
-import { a } from '@/ts-import-c';
+import { a } from '@/ts-import-c'
 
-export const b = a;
+export const b = a

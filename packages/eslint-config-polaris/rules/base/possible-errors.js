@@ -60,8 +60,8 @@ module.exports = {
         nestedBinaryExpressions: false,
         returnAssign: false,
         ignoreJSX: 'all', // delegate to eslint-plugin-react
-        enforceForArrowConditionals: false,
-      },
+        enforceForArrowConditionals: false
+      }
     ],
 
     // 禁止不必要的分号
@@ -121,6 +121,6 @@ module.exports = {
     'valid-jsdoc': 'off',
 
     // 同 typeof 表达式结果进行比较的值必须是有效的字符串，即 undefined, object, boolean, number, string, function 或 symbol
-    'valid-typeof': ['error', { requireStringLiterals: true }],
-  },
-};
+    'valid-typeof': ['error', { requireStringLiterals: true }]
+  }
+}

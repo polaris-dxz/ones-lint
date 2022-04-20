@@ -25,8 +25,8 @@ module.exports = {
     'no-multi-spaces': [
       'warn',
       {
-        ignoreEOLComments: false,
-      },
+        ignoreEOLComments: false
+      }
     ],
 
     // 使用 2 个空格缩进
@@ -43,6 +43,6 @@ module.exports = {
 
     // 不要直接在对象上调用 Object.prototypes 上的方法
     // @unessential
-    'no-prototype-builtins': 'warn',
-  },
-};
+    'no-prototype-builtins': 'warn'
+  }
+}

@@ -1,3 +1,1 @@
 # `eslint-config-polaris`
-
-

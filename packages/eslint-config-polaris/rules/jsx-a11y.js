@@ -18,6 +18,6 @@ module.exports = {
     'jsx-a11y/iframe-has-title': 'warn',
     'jsx-a11y/no-access-key': 'warn',
     'jsx-a11y/no-distracting-elements': 'warn',
-    'jsx-a11y/scope': 'warn',
-  },
-};
+    'jsx-a11y/scope': 'warn'
+  }
+}

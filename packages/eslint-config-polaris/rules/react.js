@@ -37,8 +37,8 @@ module.exports = {
       'off',
       {
         eventHandlerPrefix: 'handle',
-        eventHandlerPropPrefix: 'on',
-      },
+        eventHandlerPropPrefix: 'on'
+      }
     ],
 
     // JSX 属性使用 2 个空格缩进
@@ -58,8 +58,8 @@ module.exports = {
       {
         ignoreRefs: false,
         allowArrowFunctions: true,
-        allowBind: false,
-      },
+        allowBind: false
+      }
     ],
 
     // 不要声明重复的属性名
@@ -76,8 +76,8 @@ module.exports = {
       'error',
       {
         allowAllCaps: true,
-        ignore: [],
-      },
+        ignore: []
+      }
     ],
 
     // 类型检查器的属性名按首字母排序
@@ -86,8 +86,8 @@ module.exports = {
       {
         ignoreCase: true,
         callbacksLast: false,
-        requiredFirst: false,
-      },
+        requiredFirst: false
+      }
     ],
 
     // 本条废弃，用新规则代替 react/jsx-sort-props
@@ -102,8 +102,8 @@ module.exports = {
         shorthandFirst: false,
         shorthandLast: false,
         noSortAlphabetically: false,
-        reservedFirst: true,
-      },
+        reservedFirst: true
+      }
     ],
 
     // 本条是对JS规约 no-unused-vars 的补充，防止React被错误地标记为未使用
@@ -155,8 +155,8 @@ module.exports = {
       {
         ignore: [],
         customValidators: [],
-        skipUndeclared: false,
-      },
+        skipUndeclared: false
+      }
     ],
 
     // 防止 JSX 中未引入 React
@@ -182,7 +182,7 @@ module.exports = {
           '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
           'instance-methods',
           'everything-else',
-          'rendering',
+          'rendering'
         ],
         groups: {
           lifecycle: [
@@ -204,11 +204,11 @@ module.exports = {
             'shouldComponentUpdate',
             'componentWillUpdate',
             'componentDidUpdate',
-            'componentWillUnmount',
+            'componentWillUnmount'
           ],
-          rendering: ['/^render.+$/', 'render'],
-        },
-      },
+          rendering: ['/^render.+$/', 'render']
+        }
+      }
     ],
 
     // 多行的 JSX 标签需用小括号包裹
@@ -219,8 +219,8 @@ module.exports = {
         declaration: true,
         assignment: true,
         return: true,
-        arrow: true,
-      },
+        arrow: true
+      }
     ],
 
     // 设置第一个属性的位置。multiline-multiprop：如果JSX标签占用多行并且有多个属性，则第一个属性应始终放在新行上
@@ -242,7 +242,10 @@ module.exports = {
     'react/no-access-state-in-setstate': 'error',
 
     // 指定 React 组件的文件扩展名
-    'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.js', '.tsx', '.ts', '.vue'] }],
+    'react/jsx-filename-extension': [
+      'error',
+      { extensions: ['.jsx', '.js', '.tsx', '.ts', '.vue'] }
+    ],
 
     // JSX 语句的文本节点中不要使用注释字符串（例如，以//或/ *开头）
     'react/jsx-no-comment-textnodes': 'error',
@@ -271,8 +274,8 @@ module.exports = {
       'error',
       {
         customValidators: [],
-        skipShapeProps: true,
-      },
+        skipShapeProps: true
+      }
     ],
 
     // style 的属性值必须是一个对象
@@ -291,8 +294,8 @@ module.exports = {
       {
         closingSlash: 'never',
         beforeSelfClosing: 'always',
-        afterOpening: 'never',
-      },
+        afterOpening: 'never'
+      }
     ],
 
     // 该条废弃，被替代为 jsx-tag-spacing
@@ -334,17 +337,17 @@ module.exports = {
 
     // Checks effect dependencies
     // @link https://reactjs.org/docs/hooks-rules.html
-    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/exhaustive-deps': 'warn'
   },
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.json'],
-      },
+        extensions: ['.js', '.jsx', '.json']
+      }
     },
     react: {
       pragma: 'React',
-      version: 'detect',
-    },
-  },
-};
+      version: 'detect'
+    }
+  }
+}

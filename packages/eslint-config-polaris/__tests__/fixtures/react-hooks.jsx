@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 function Example() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   if (count < 10) {
     useEffect(() => {
-      document.title = `You clicked ${count} times`;
-    }, []);
+      document.title = `You clicked ${count} times`
+    }, [])
   }
 
   return (
@@ -14,7 +14,7 @@ function Example() {
       <p>You clicked {count} times</p>
       <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
-  );
+  )
 }
 
-export default Example;
+export default Example

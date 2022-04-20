@@ -9,19 +9,19 @@ module.exports = {
   settings: {
     // Apply special parsing for TypeScript files
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.d.ts', '.tsx'],
+      '@typescript-eslint/parser': ['.ts', '.d.ts', '.tsx']
     },
     // Use eslint-import-resolver-typescript
     'import/resolver': {
-      typescript: {},
+      typescript: {}
     },
     // Append 'ts' extensions to 'import/extensions' setting
-    'import/extensions': ['.js', '.ts', '.mjs'],
+    'import/extensions': ['.js', '.ts', '.mjs']
   },
   parserOptions: {
     project: './tsconfig.json', // default project config
     createDefaultProgram: true, // 兼容未在 tsconfig.json 中 provided 的文件
-    extraFileExtensions: ['.vue'],
+    extraFileExtensions: ['.vue']
   },
   rules: {
     /**
@@ -53,8 +53,8 @@ module.exports = {
         'ts-expect-error': 'allow-with-description',
         'ts-ignore': 'allow-with-description',
         'ts-nocheck': 'allow-with-description',
-        'ts-check': 'allow-with-description',
-      },
+        'ts-check': 'allow-with-description'
+      }
     ],
 
     /**
@@ -76,11 +76,7 @@ module.exports = {
      * @extend
      */
     'brace-style': 'off',
-    '@typescript-eslint/brace-style': [
-      'error',
-      '1tbs',
-      { allowSingleLine: true },
-    ],
+    '@typescript-eslint/brace-style': ['error', '1tbs', { allowSingleLine: true }],
 
     /**
      * 【推荐】类的属性如果是字面量，则必须是只读属性而不能用 getter
@@ -94,10 +90,7 @@ module.exports = {
      * @extend
      */
     'comma-spacing': 'off',
-    '@typescript-eslint/comma-spacing': [
-      'error',
-      { before: false, after: true },
-    ],
+    '@typescript-eslint/comma-spacing': ['error', { before: false, after: true }],
 
     /**
      * 【强制】类型断言必须使用 as Type 而非 <T>，对象字面量禁止类型断言（断言成 any 除外）
@@ -108,8 +101,8 @@ module.exports = {
       'error',
       {
         assertionStyle: 'as',
-        objectLiteralTypeAssertions: 'never',
-      },
+        objectLiteralTypeAssertions: 'never'
+      }
     ],
 
     /**
@@ -143,10 +136,7 @@ module.exports = {
      * 【推荐】设置类的成员的可访问性，public 可省略
      * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-member-accessibility.md
      */
-    '@typescript-eslint/explicit-member-accessibility': [
-      'warn',
-      { accessibility: 'no-public' },
-    ],
+    '@typescript-eslint/explicit-member-accessibility': ['warn', { accessibility: 'no-public' }],
 
     /**
      * 【关闭】导出的函数或类中的 public 方法必须定义输入输出参数的类型
@@ -176,14 +166,14 @@ module.exports = {
         // MemberExpression: null,
         FunctionDeclaration: {
           parameters: 1,
-          body: 1,
+          body: 1
         },
         FunctionExpression: {
           parameters: 1,
-          body: 1,
+          body: 1
         },
         CallExpression: {
-          arguments: 1,
+          arguments: 1
         },
         ArrayExpression: 1,
         ObjectExpression: 1,
@@ -203,10 +193,10 @@ module.exports = {
           'JSXClosingElement',
           'JSXText',
           'JSXEmptyExpression',
-          'JSXSpreadChild',
+          'JSXSpreadChild'
         ],
-        ignoreComments: false,
-      },
+        ignoreComments: false
+      }
     ],
 
     /**
@@ -231,9 +221,9 @@ module.exports = {
         overrides: {
           return: { after: true },
           throw: { after: true },
-          case: { after: true },
-        },
-      },
+          case: { after: true }
+        }
+      }
     ],
 
     /**
@@ -285,9 +275,9 @@ module.exports = {
           'protected-method',
           'private-method',
           'instance-method',
-          'method',
-        ],
-      },
+          'method'
+        ]
+      }
     ],
 
     /**
@@ -350,8 +340,8 @@ module.exports = {
     '@typescript-eslint/no-empty-function': [
       'error',
       {
-        allow: ['arrowFunctions', 'functions', 'methods'],
-      },
+        allow: ['arrowFunctions', 'functions', 'methods']
+      }
     ],
 
     /**
@@ -457,8 +447,8 @@ module.exports = {
       'error',
       {
         allowDeclarations: true,
-        allowDefinitionFiles: true,
-      },
+        allowDefinitionFiles: true
+      }
     ],
 
     /**
@@ -495,8 +485,8 @@ module.exports = {
     '@typescript-eslint/no-this-alias': [
       'warn',
       {
-        allowDestructuring: true,
-      },
+        allowDestructuring: true
+      }
     ],
 
     /**
@@ -564,8 +554,8 @@ module.exports = {
       {
         allowShortCircuit: true,
         allowTernary: true,
-        allowTaggedTemplates: true,
-      },
+        allowTaggedTemplates: true
+      }
     ],
 
     /**
@@ -575,7 +565,7 @@ module.exports = {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [
       'error',
-      { vars: 'all', args: 'after-used', ignoreRestSiblings: true },
+      { vars: 'all', args: 'after-used', ignoreRestSiblings: true }
     ],
 
     /**
@@ -590,7 +580,7 @@ module.exports = {
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': [
       'error',
-      { functions: false, classes: false, variables: false },
+      { functions: false, classes: false, variables: false }
     ],
 
     /**
@@ -722,8 +712,8 @@ module.exports = {
       {
         anonymous: 'always',
         named: 'never',
-        asyncArrow: 'always',
-      },
+        asyncArrow: 'always'
+      }
     ],
 
     /**
@@ -744,8 +734,8 @@ module.exports = {
       {
         path: 'never',
         types: 'always',
-        lib: 'always',
-      },
+        lib: 'always'
+      }
     ],
 
     /**
@@ -765,8 +755,8 @@ module.exports = {
         objectDestructuring: false,
         parameter: false,
         propertyDeclaration: true,
-        variableDeclaration: false,
-      },
+        variableDeclaration: false
+      }
     ],
 
     /**
@@ -777,13 +767,12 @@ module.exports = {
     /**
      * 【推荐】定义函数时，优先使用参数的联合类型而不是函数的类型重载
      */
-    '@typescript-eslint/unified-signatures': 'warn',
+    '@typescript-eslint/unified-signatures': 'warn'
   },
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
       rules: {
-        // Disable `no-undef` rule within TypeScript files because it incorrectly errors when exporting default interfaces
         // https://github.com/iamturns/eslint-config-airbnb-typescript/issues/50
         // This will be caught by TypeScript compiler if `strictNullChecks` (or `strict`) is enabled
         'no-undef': 'off',
@@ -792,8 +781,8 @@ module.exports = {
 
         // Disable ESLint-based module resolution check for improved monorepo support
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
-        'import/no-unresolved': 'off',
-      },
-    },
-  ],
-};
+        'import/no-unresolved': 'off'
+      }
+    }
+  ]
+}
