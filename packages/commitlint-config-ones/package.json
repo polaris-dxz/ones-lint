@@ -1,0 +1,15 @@
+{
+  "name": "commitlint-config-ones",
+  "version": "1.0.4",
+  "description": "> TODO: description",
+  "author": "polarisdu <polarisdu@outlook.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^4.6.3"
+  }
+}

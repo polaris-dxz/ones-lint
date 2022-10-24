@@ -1,0 +1,21 @@
+{
+  "name": "stylelint-config-ones",
+  "version": "1.0.3",
+  "description": "> TODO: description",
+  "author": "polarisdu <polarisdu@outlook.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./__tests__/*.test.js"
+  },
+  "peerDependencies": {
+    "stylelint": ">=8.3.0",
+    "stylelint-scss": ">=2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "stylelint": "^14.3.0",
+    "stylelint-scss": "^4.1.0"
+  }
+}

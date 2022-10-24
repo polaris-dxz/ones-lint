@@ -1,0 +1,12 @@
+{
+  "name": "markdownlint-config-ones",
+  "version": "1.0.3",
+  "description": "> TODO: description",
+  "author": "polarisdu <polarisdu@outlook.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "index.json",
+  "peerDependencies": {
+    "markdownlint": "^0.21.1"
+  }
+}
